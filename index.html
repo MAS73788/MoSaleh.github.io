@@ -184,8 +184,8 @@
         <div class="cv-choice-lang">&gt; ENGLISH</div>
         <div class="cv-choice-name">Resume / CV</div>
         <div class="cv-choice-btns">
-          <a href="mohamed saleh cv .pdf" target="_blank" class="cv-mini-btn cv-mini-view"><i class="fas fa-eye"></i> VIEW</a>
-          <a href="mohamed saleh cv .pdf" download class="cv-mini-btn cv-mini-dl"><i class="fas fa-download"></i> DL</a>
+          <a href="mohamed saleh cv.pdf" target="_blank" class="cv-mini-btn cv-mini-view"><i class="fas fa-eye"></i> VIEW</a>
+          <a href="mohamed saleh cv.pdf" download class="cv-mini-btn cv-mini-dl"><i class="fas fa-download"></i> DL</a>
         </div>
       </div>
       <div class="cv-choice">
@@ -193,8 +193,8 @@
         <div class="cv-choice-lang">&gt; ARABIC</div>
         <div class="cv-choice-name">&#1575;&#1604;&#1587;&#1610;&#1585;&#1577; &#1575;&#1604;&#1584;&#1575;&#1578;&#1610;&#1577;</div>
         <div class="cv-choice-btns">
-          <a href="&#1605;&#1581;&#1605;&#1583; &#1589;&#1575;&#1604;&#1581; cv .pdf" target="_blank" class="cv-mini-btn cv-mini-view"><i class="fas fa-eye"></i> VIEW</a>
-          <a href="&#1605;&#1581;&#1605;&#1583; &#1589;&#1575;&#1604;&#1581; cv .pdf" download class="cv-mini-btn cv-mini-dl"><i class="fas fa-download"></i> DL</a>
+          <a href="&#1605;&#1581;&#1605;&#1583; &#1589;&#1575;&#1604;&#1581; cv.pdf" target="_blank" class="cv-mini-btn cv-mini-view"><i class="fas fa-eye"></i> VIEW</a>
+          <a href="&#1605;&#1581;&#1605;&#1583; &#1589;&#1575;&#1604;&#1581; cv.pdf" download class="cv-mini-btn cv-mini-dl"><i class="fas fa-download"></i> DL</a>
         </div>
       </div>
     </div>
@@ -337,8 +337,8 @@
         <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
         <div class="cert-info"><div class="cert-name">eCPPT</div><div class="cert-label">CERTIFIED PROFESSIONAL PENTESTER</div></div>
         <div class="cert-actions">
-          <a href="eCPPT.pdf" target="_blank" class="cert-btn cert-btn-view" title="View"><i class="fas fa-eye"></i></a>
-          <a href="eCPPT.pdf" download class="cert-btn cert-btn-dl" title="Download"><i class="fas fa-download"></i></a>
+          <a href="eCPPT .pdf" target="_blank" class="cert-btn cert-btn-view" title="View"><i class="fas fa-eye"></i></a>
+          <a href="eCPPT .pdf" download class="cert-btn cert-btn-dl" title="Download"><i class="fas fa-download"></i></a>
         </div>
       </div>
 
@@ -401,8 +401,7 @@
     </div>
     <div class="interests-grid">
       <div class="interest-card reveal">
-        
-        <img src="الاهلى.png" alt="Al Ahly SC" class="club-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <img src="&#1575;&#1604;&#1575;&#1607;&#1604;&#1609;.png" alt="Al Ahly SC" class="club-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
         <span class="interest-emoji" style="display:none">&#128308;&#9899;</span>
         <div class="interest-name">AL AHLY SC</div>
         <div class="interest-desc">Egypt's greatest club — The African Giants. Proud supporter of El Club.</div>
@@ -449,7 +448,7 @@ document.querySelectorAll('a,button,.btn').forEach(el=>{
   el.addEventListener('mouseleave',()=>{cursor.style.width='12px';cursor.style.height='12px';ring.style.width='36px';ring.style.height='36px';ring.style.borderColor='var(--cyan)'});
 });
 
-const titles=['IT & CYBERSECURITY ENGINEER','NETWORK SECURITY SPECIALIST','ETHICAL HACKER PEN TESTER '];
+const titles=['IT & CYBERSECURITY ENGINEER','NETWORK SECURITY SPECIALIST','ETHICAL HACKER IN TRAINING','DIGITAL FORTRESS BUILDER'];
 let ti=0,ci=0,del=false;
 const tel=document.getElementById('typedTitle');
 function type(){const t=titles[ti];if(!del){ci++;tel.innerHTML=t.slice(0,ci)+'<span class="cursor-blink">_</span>';if(ci===t.length){del=true;setTimeout(type,2200);return}}else{ci--;tel.innerHTML=t.slice(0,ci)+'<span class="cursor-blink">_</span>';if(ci===0){del=false;ti=(ti+1)%titles.length}}setTimeout(type,del?40:80)}
