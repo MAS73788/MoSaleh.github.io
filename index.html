@@ -218,7 +218,7 @@
   <div class="hero-inner">
     <div class="photo-wrap reveal">
       <div class="photo-ring">
-        <img class="photo-img" src="IMG-20260313-WA0005.jpg" alt="Mohamed Saleh"
+        <img class="photo-img" src="IMG-20260313-WA0005.png" alt="Mohamed Saleh"
           onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUyIiBoZWlnaHQ9IjI1MiIgdmlld0JveD0iMCAwIDI1MiAyNTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTI2IiBjeT0iMTI2IiByPSIxMjYiIGZpbGw9IiMwZDBkMjAiLz48Y2lyY2xlIGN4PSIxMjYiIGN5PSI5OCIgcj0iNDQiIGZpbGw9IiMxYTFhMzAiLz48ZWxsaXBzZSBjeD0iMTI2IiBjeT0iMjAwIiByeD0iNjQiIHJ5PSI0MCIgZmlsbD0iIzFhMWEzMCIvPjwvc3ZnPg=='">
       </div>
       <div class="status-dot"></div>
@@ -401,13 +401,14 @@
     </div>
     <div class="interests-grid">
       <div class="interest-card reveal">
-        <img src="&#1575;&#1604;&#1575;&#1607;&#1604;&#1609;.png" alt="Al Ahly SC" class="club-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        
+        <img src="الاهلى.png" alt="Al Ahly SC" class="club-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
         <span class="interest-emoji" style="display:none">&#128308;&#9899;</span>
         <div class="interest-name">AL AHLY SC</div>
         <div class="interest-desc">Egypt's greatest club — The African Giants. Proud supporter of El Club.</div>
       </div>
       <div class="interest-card reveal">
-        <img src="real .png" alt="Real Madrid" class="club-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <img src="real.png" alt="Real Madrid" class="club-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
         <span class="interest-emoji" style="display:none">&#9898;&#128081;</span>
         <div class="interest-name">REAL MADRID</div>
         <div class="interest-desc">Los Blancos — The most successful club in Champions League history. ¡Hala Madrid!</div>
@@ -448,7 +449,7 @@ document.querySelectorAll('a,button,.btn').forEach(el=>{
   el.addEventListener('mouseleave',()=>{cursor.style.width='12px';cursor.style.height='12px';ring.style.width='36px';ring.style.height='36px';ring.style.borderColor='var(--cyan)'});
 });
 
-const titles=['IT & CYBERSECURITY ENGINEER','NETWORK SECURITY SPECIALIST','ETHICAL HACKER IN TRAINING','DIGITAL FORTRESS BUILDER'];
+const titles=['IT & CYBERSECURITY ENGINEER','NETWORK SECURITY SPECIALIST','ETHICAL HACKER PEN TESTER '];
 let ti=0,ci=0,del=false;
 const tel=document.getElementById('typedTitle');
 function type(){const t=titles[ti];if(!del){ci++;tel.innerHTML=t.slice(0,ci)+'<span class="cursor-blink">_</span>';if(ci===t.length){del=true;setTimeout(type,2200);return}}else{ci--;tel.innerHTML=t.slice(0,ci)+'<span class="cursor-blink">_</span>';if(ci===0){del=false;ti=(ti+1)%titles.length}}setTimeout(type,del?40:80)}
