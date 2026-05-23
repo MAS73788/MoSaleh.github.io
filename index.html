@@ -419,7 +419,7 @@ document.querySelectorAll('a,button,.btn').forEach(el=>{
   el.addEventListener('mouseleave',()=>{cursor.style.width='12px';cursor.style.height='12px';ring.style.width='36px';ring.style.height='36px';ring.style.borderColor='var(--cyan)'});
 });
 
-const titles=['IT & CYBERSECURITY ENGINEER','NETWORK SECURITY SPECIALIST','ETHICAL HACKER PEN TESTER','DIGITAL FORTRESS BUILDER'];
+const titles=['IT & CYBERSECURITY ENGINEER','NETWORK SECURITY SPECIALIST','ETHICAL HACKER PEN TESTER ','DIGITAL FORTRESS BUILDER'];
 let ti=0,ci=0,del=false;
 const tel=document.getElementById('typedTitle');
 function type(){const t=titles[ti];if(!del){ci++;tel.innerHTML=t.slice(0,ci)+'<span class="cursor-blink">_</span>';if(ci===t.length){del=true;setTimeout(type,2200);return}}else{ci--;tel.innerHTML=t.slice(0,ci)+'<span class="cursor-blink">_</span>';if(ci===0){del=false;ti=(ti+1)%titles.length}}setTimeout(type,del?40:80)}
